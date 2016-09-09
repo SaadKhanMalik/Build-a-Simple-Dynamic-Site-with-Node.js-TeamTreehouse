@@ -30,25 +30,10 @@ var Profile = require("./profile.js");
 
         //Store values
         var values = {
-          avatarURL:          profileJSON.gravatar_url,
-          username:           profileJSON.profile_name,
-          badgeCount:         profileJSON.length,
-          HTML:               profileJSON.points.HTML,
-          CSS:                profileJSON.points.CSS,
-          Design:             profileJSON.points.Design,
-          JavaScript:         profileJSON.points.JavaScript,
-          Ruby:               profileJSON.points.Ruby,
-          PHP:                profileJSON.points.PHP,
-          WordPress:          profileJSON.points.WordPress,
-          iOs:                profileJSON.points.iOs,
-          //Development Tools:  profileJSON.points.["Development Tools"],
-          Business:           profileJSON.points.Business,
-          Python:             profileJSON.points.Python,
-          Java:               profileJSON.points.Java,
-          //Digital Literacy:   profileJSON.points.['Digital Literacy'],
-          //Game Development:   profileJSON.points.['Game Development'],
-          //C#:                 profileJSON.points.['C#'],
-          Databases:          profileJSON.points.Databases,
+          avatarUrl: profileJSON.gravatar_url,
+          username: profileJSON.profile_name,
+          badges: profileJSON.badges.length,
+          javascriptPoints: profileJSON.points.JavaScript
         }
         //simple response
         response.write(values.userename + " has " + values.badgeCount + " badges \n");
