@@ -26,11 +26,3 @@ var router = require('./router');
   server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
   });
-
-
-
-
-
-//4. Function that handles the reading of files and merge  in value
-  //read from a file and get a string
-    // merge values into string
